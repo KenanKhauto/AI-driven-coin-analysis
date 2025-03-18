@@ -1,0 +1,98 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Role of AI in Numismatics: Addressing Challenges in Coin Classification}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Challenges in Traditional Numismatic Classification}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{\nonumberline Time-Consuming Manual Classification}{5}{subsubsection*.3}%
+\contentsline {subsubsection}{\nonumberline Subjectivity in Expert Analysis}{6}{subsubsection*.5}%
+\contentsline {subsubsection}{\nonumberline Issues with Degraded Coins}{6}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {1.1.2}How AI Enhances Coin Classification and Similarity Detection}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{\nonumberline Machine Learning Approaches for Feature Extraction}{6}{subsubsection*.9}%
+\contentsline {paragraph}{\nonumberline A. Traditional Image Processing Approaches}{7}{paragraph*.11}%
+\contentsline {paragraph}{\nonumberline B. Deep Learning-Based Feature Extraction}{7}{paragraph*.13}%
+\contentsline {paragraph}{\nonumberline C. Self-Supervised Learning for Coin Analysis}{7}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline Code and Reproducibility}{8}{paragraph*.17}%
+\contentsline {chapter}{\numberline {2}Dataset Overview: Source, Composition, and Preprocessing}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Source and Composition}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Dataset Preprocessing}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Handling Image Size and Resolution Inconsistencies}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Image Normalization for Neural Networks}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Loading and Organizing the Dataset}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Pairing Obverse and Reverse Coin Images}{11}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Data Retrieval and Batching}{11}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Summary of Preprocessing Steps}{12}{subsection.2.2.6}%
+\contentsline {chapter}{\numberline {3}Feature Extraction and Multimodal Embeddings}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Feature Extraction Using Pretrained ResNet-50}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Introduction to Feature Extraction}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Feature Extraction Pipeline}{13}{subsection.3.1.2}%
+\contentsline {subsubsection}{\nonumberline ResNet-50 as a Feature Extractor}{13}{subsubsection*.22}%
+\contentsline {subsubsection}{\nonumberline Feature Extraction Process}{14}{subsubsection*.24}%
+\contentsline {subsubsection}{\nonumberline Handling Paired Images (Obverse and Reverse)}{15}{subsubsection*.26}%
+\contentsline {subsection}{\numberline {3.1.3}Visualization of Feature Extraction}{16}{subsection.3.1.3}%
+\contentsline {paragraph}{\nonumberline t-SNE Visualization for RGB Features}{17}{figure.caption.30}%
+\contentsline {paragraph}{\nonumberline t-SNE Visualization for Grayscale Features}{18}{figure.caption.34}%
+\contentsline {paragraph}{\nonumberline Comparison and Implications}{18}{paragraph*.36}%
+\contentsline {subsection}{\numberline {3.1.4}Summary of Feature Extraction}{19}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Multimodal Feature Extraction: Combining Image and Text}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Processing the Dataset}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Introduction to CLIP}{20}{subsection.3.2.2}%
+\contentsline {subsubsection}{\nonumberline How CLIP Works}{20}{subsubsection*.40}%
+\contentsline {subsubsection}{\nonumberline Why CLIP is Useful for our Study}{20}{subsubsection*.43}%
+\contentsline {subsubsection}{\nonumberline Zero-Shot Learning with CLIP}{21}{subsubsection*.45}%
+\contentsline {subsubsection}{\nonumberline Challenges and Limitations of CLIP}{21}{subsubsection*.47}%
+\contentsline {subsection}{\numberline {3.2.3}Creating Text Embeddings Using Templates}{22}{subsection.3.2.3}%
+\contentsline {subsubsection}{\nonumberline The Importance of Text Prompts}{22}{subsubsection*.49}%
+\contentsline {subsubsection}{\nonumberline Text Template Design}{22}{subsubsection*.51}%
+\contentsline {subsubsection}{\nonumberline Implementation of Text Templates}{22}{subsubsection*.53}%
+\contentsline {subsection}{\numberline {3.2.4}Extracting Features with CLIP}{23}{subsection.3.2.4}%
+\contentsline {subsubsection}{\nonumberline Embedding Extraction Pipeline}{23}{subsubsection*.55}%
+\contentsline {subsubsection}{\nonumberline Implementation of CLIP-Based Feature Extraction}{24}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {3.2.5}Fusion Using an MLP}{25}{subsection.3.2.5}%
+\contentsline {subsubsection}{\nonumberline What is a Multilayer Perceptron (MLP)?}{25}{subsubsection*.59}%
+\contentsline {subsubsection}{\nonumberline Architecture of the Fusion Network}{25}{subsubsection*.61}%
+\contentsline {subsubsection}{\nonumberline Loss Function for Multimodal Fusion}{26}{subsubsection*.63}%
+\contentsline {subsubsection}{\nonumberline Final Fused Embedding Dimension}{27}{subsubsection*.65}%
+\contentsline {subsection}{\numberline {3.2.6}t-SNE Visualization of Fused Features}{27}{subsection.3.2.6}%
+\contentsline {subsubsection}{\nonumberline Observations}{29}{subsubsection*.69}%
+\contentsline {subsection}{\numberline {3.2.7}Summary of Multimodal Feature Extraction}{29}{subsection.3.2.7}%
+\contentsline {section}{\numberline {3.3}Computing Similarity Across Embeddings}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Introduction to Cosine Similarity}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Measuring Similarity for Image-Based Embeddings}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Measuring Similarity in Multimodal Space}{30}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Comparison of Results}{31}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}Network Analysis of Coin Similarities}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Building the Similarity Network}{34}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Visualization of Similarity Graphs}{34}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Observations}{35}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Limitations and Challenges}{35}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Conclusion}{35}{subsection.3.4.6}%
+\contentsline {chapter}{\numberline {4}Evaluation}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}t-SNE Feature Space Evaluation}{36}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Analysis of Image-Based Embeddings}{36}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Analysis of Fused Image-Text Embeddings}{37}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Key Observations}{37}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Similarity Retrieval Performance}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Retrieval Using Image-Only Embeddings}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Retrieval Using Fused Image-Text Embeddings}{38}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Comparison of Both Approaches}{38}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Limitations and Error Analysis}{38}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Influence of Template-Based Text Embeddings}{39}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}High Similarity Scores for Dissimilar Images}{39}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Challenges in Handling Unclassified Coins}{39}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Limitations of the Current Evaluation Metrics}{40}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Impact of Image Preprocessing Choices}{40}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Summary of Limitations and Future Directions}{40}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Summary of the Evaluation}{41}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Summary of Contributions}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Key Findings}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Limitations of the Study}{43}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Future Work}{43}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Dynamic Text Embeddings}{43}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Advanced Fusion Strategies}{43}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Alternative Similarity Metrics}{43}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Incorporating Additional Metadata}{44}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Expanding Network Analysis}{44}{subsection.5.4.5}%
+\contentsline {section}{\numberline {5.5}Final Remarks}{44}{section.5.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.77}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

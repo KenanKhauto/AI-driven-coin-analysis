@@ -100,7 +100,7 @@ def load_txt(file_path):
 
 # Load feature vectors and filenames
 features = np.load("features.npy")  # Example: "obverse_features_gray.npy"
-filenames = np.load_txt("filenames.txt")  # Example: "obverse_filenames_gray.txt"
+filenames = load_txt("filenames.txt")  # Example: "obverse_filenames_gray.txt"
 
 # Compute the similarity matrix (Cosine Similarity)
 similarity_matrix = cosine_similarity(features)

@@ -173,4 +173,4 @@ Creative Commons Lizenzvertrag Content is licensed under a Creative Commons Attr
 ---
 
 ## **Acknowledgments**
-Special thanks to **Dr. Karsten Tolle** and the **Goethe-Universität Frankfurt am Main** for their guidance and support.
+Special thanks to **Dr. Karsten Tolle** , **Sebastian Gampe** and the **Goethe-Universität Frankfurt am Main** for their guidance and support.

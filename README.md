@@ -74,39 +74,6 @@ You can explore the **interactive graphs** here:
 These graphs allow for **interactive exploration**, helping to identify patterns in coin similarities across different embedding techniques.
 
 ---
-## **Example: Coin Similarity Results**
-The following images demonstrate how the AI model retrieves the **most similar and most dissimilar** coins for a given query image. The similarity is computed based on **deep learning feature extraction and cosine similarity**.
-
-### **Example 1: Image-Based Features Coin Similarity**
-The image below shows a **query coin** (left) and its **top 3 most similar** (right, top row) and **top 3 least similar** coins (right, bottom row).
-
-![Image-Based Features Similarity Example 1](./results/image_similarity_example_1.png)
-
----
-
-### **Example 2: Fused Features Similarity**
-The following example showcases similarity retrieval when using **fused embeddings**. The model retrieves visually and semantically similar coins.
-
-![Fused Similarity Example 1](./results/fused_similarity_example_1.png)
-
----
-
-### **Example 3: Additional Similarity Results**
-Below are additional results demonstrating different query images and their **most similar and dissimilar matches**.
-
-#### **Image-Based Features Similarity - Example 2**
-![Image-Based Features Similarity Example 2](./results/image_similarity_example_2.png)
-
-#### **Image-Based Features Similarity - Example 3**
-![Image-Based Features Similarity Example 3](./results/image_similarity_example_3.png)
-
-#### **Fused Features Similarity - Example 2**
-![Fused Similarity Example 2](./results/fused_similarity_example_2.png)
-
-#### **Fused Features Similarity - Example 3**
-![Fused Similarity Example 3](./results/fused_similarity_example_3.png)
-
----
 
 ### **Feature Files (.npy and .txt)**
 The extracted features are stored as `.npy` and `.txt` files:
